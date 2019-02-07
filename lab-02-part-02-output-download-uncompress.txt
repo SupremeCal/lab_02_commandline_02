@@ -164,7 +164,7 @@ curl -o mtec1002-lab-02.zip http://foureyes.github.io/mtec1002-spring2014/labs/0
 Write down the command that you used to uncompress the file.
 ----------
 
-unzip example.zip 
+unzip mtech1002-lab-02.zip 
 
 ==========
 15. Change to the directory that was just created.  List the contents (of the directory that was extracted from the labs .zip file). 
@@ -172,7 +172,7 @@ unzip example.zip
 Copy and paste the output below.
 ----------
 
-
+books	logs	web
 
 ==========
 We're going to mess around with archiving and compressing files.  We'll make a directory with a file in it... archive and compress it.... and uncompress it elsewhere.
@@ -183,7 +183,14 @@ We're going to mess around with archiving and compressing files.  We'll make a d
 Copy and paste the output below.
 ----------
 
-
+AMALogger20190109.log	Movies			hello
+Adlm			Music			ipe.properties
+Adobe			New Unity Project	isus
+Applications		Pictures		mtec1002-lab-02.zip
+Desktop			Public			mtech1002
+Documents		QLData			pymel.log
+Downloads		Things			stuff
+Library			echo			xgen
 
 ==========
 17. Change into the "stuff" directory that you just created.  Run the following command (we haven't learned this exact command yet, but we will in the next lab!) exactly as described below:
@@ -195,7 +202,7 @@ List the files in the directory you're currently in (which should be stuff).
 Copy and paste the output below.
 ----------
 
-
+hello.txt
 
 ==========
 18. Go up one directory back into your home directory.  Run the following commands exactly to create a compressed archive of the stuff folder.
@@ -207,7 +214,15 @@ List the files in the directory you're currently in (which should be home).
 Copy and paste the output below.
 ----------
 
-
+AMALogger20190109.log	Movies			hello
+Adlm			Music			ipe.properties
+Adobe			New Unity Project	isus
+Applications		Pictures		mtec1002-lab-02.zip
+Desktop			Public			mtech1002
+Documents		QLData			pymel.log
+Downloads		Things			stuff
+Library			echo			stuff.tar
+MPLABXProjects		google.html		xgen
 
 ==========
 19. Go up one directory back into your home directory.  Run the following commands exactly to create a compressed archive of the stuff folder.
@@ -217,7 +232,8 @@ $ tar -cvf stuff.tar stuff
 Copy and paste the output below.
 ----------
 
-
+a stuff
+a stuff/hello.txt
 
 ==========
 20. List the files in the directory you're currently in (which should be home).  
@@ -225,7 +241,15 @@ Copy and paste the output below.
 Copy and paste the output below. (It should contain stuff.tar)
 ----------
 
-
+AMALogger20190109.log	Movies			hello
+Adlm			Music			ipe.properties
+Adobe			New Unity Project	isus
+Applications		Pictures		mtec1002-lab-02.zip
+Desktop			Public			mtech1002
+Documents		QLData			pymel.log
+Downloads		Things			stuff
+Library			echo			stuff.tar
+MPLABXProjects		google.html		xgen
 
 ==========
 21. Now compress it!  Type:
@@ -235,6 +259,15 @@ gzip stuff.tar
 List your files again.... you should have a new file with a .gz extension.  Copy and paste the output of your this below.
 ----------
 
+AMALogger20190109.log	Movies			hello
+Adlm			Music			ipe.properties
+Adobe			New Unity Project	isus
+Applications		Pictures		mtec1002-lab-02.zip
+Desktop			Public			mtech1002
+Documents		QLData			pymel.log
+Downloads		Things			stuff
+Library			echo			stuff.tar.gz
+MPLABXProjects		google.html		xgen
 
 
 ==========
